@@ -105,8 +105,8 @@
             document.getElementById('resultado').value += acao
           }
           if (valor === '=') {
-            var valor_campo = document.getElementById('resultado').value  
-            console.log(valor_campo)
+            var valor_campo = eval(document.getElementById('resultado').value)
+            document.getElementById('resultado').value = valor_campo
           }
 
         } else if (tipo === 'valor') {
